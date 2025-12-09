@@ -14,8 +14,6 @@ import { PLUGIN_REMOTE_SYNC } from "metabase/plugins";
 import { getLocation } from "metabase/selectors/routing";
 import { Divider, Flex } from "metabase/ui";
 
-import { UpdatesNavItem } from "./UpdatesNavItem";
-
 const NavDivider = () => <Divider my="sm" />;
 
 export function SettingsNav() {
@@ -56,7 +54,7 @@ export function SettingsNav() {
         label={t`Notification channels`}
         icon="bell"
       />
-      {!hasHosting && <UpdatesNavItem />}
+
       <NavDivider />
       <SettingsNavItem
         path="localization"
@@ -106,16 +104,6 @@ export function SettingsNav() {
       />
       <NavDivider />
       <SettingsNavItem path="license" label={t`License`} icon="store" />
-      <SettingsNavItem
-        path="cloud"
-        label={
-          <Flex gap="sm" align="center">
-            <span>{t`Cloud`}</span>
-            {!hasHosting && <UpsellGem />}
-          </Flex>
-        }
-        icon="cloud"
-      />
     </AdminNavWrapper>
   );
 }

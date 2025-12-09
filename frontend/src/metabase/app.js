@@ -1,3 +1,6 @@
+// 隐藏企业版 UI
+import "./css/hide-enterprise.css";
+
 import "@mantine/core/styles.css";
 import "@mantine/dates/styles.css";
 import "@xyflow/react/dist/style.css";

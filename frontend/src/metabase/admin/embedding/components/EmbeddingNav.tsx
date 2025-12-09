@@ -33,28 +33,6 @@ export function EmbeddingNav() {
         )}
 
         <EmbeddingNavItem
-          path="/admin/embedding/modular"
-          label={
-            <Flex gap="sm" align="center">
-              <span>{t`Modular`}</span>
-              {(!hasSdkEmbedding || !hasSimpleEmbedding) && <UpsellGem />}
-            </Flex>
-          }
-          icon="embed_modular"
-        />
-
-        <EmbeddingNavItem
-          path="/admin/embedding/interactive"
-          label={
-            <Flex gap="sm" align="center">
-              <span>{t`Interactive`}</span>
-              {!hasInteractiveEmbedding && <UpsellGem />}
-            </Flex>
-          }
-          icon="embed_interactive"
-        />
-
-        <EmbeddingNavItem
           path="/admin/embedding/static"
           label={t`Static`}
           icon="embed_static"

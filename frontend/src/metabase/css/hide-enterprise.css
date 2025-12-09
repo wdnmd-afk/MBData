@@ -1,0 +1,211 @@
+/**
+ * Metabase 隐藏企业版 UI 样式
+ * 生成时间: 自动生成
+ * 用途: 隐藏企业版相关的 UI 元素
+ */
+
+/* ========================================
+   1. 隐藏"升级"相关按钮和链接
+   ======================================== */
+
+/* 升级按钮 */
+[data-testid="upgrade-button"],
+[data-testid="upgrade-link"],
+.upgrade-button,
+.upgrade-link,
+.enterprise-upgrade,
+.pro-upgrade {
+  display: none !important;
+}
+
+/* 升级横幅 */
+.upgrade-banner,
+.enterprise-banner,
+[data-testid="upgrade-banner"] {
+  display: none !important;
+}
+
+/* ========================================
+   2. 隐藏企业版功能标签
+   ======================================== */
+
+/* 企业版徽章 */
+.enterprise-badge,
+.pro-badge,
+.premium-badge,
+[data-badge="enterprise"],
+[data-badge="pro"],
+[data-badge="premium"] {
+  display: none !important;
+}
+
+/* 企业版标签 */
+.enterprise-label,
+.pro-label,
+[data-label="enterprise"] {
+  display: none !important;
+}
+
+/* ========================================
+   3. 隐藏企业版设置页面
+   ======================================== */
+
+/* 企业版设置菜单项 */
+[href*="/admin/settings/enterprise"],
+[href*="/admin/settings/whitelabel"],
+[href*="/admin/settings/white-label"],
+[href*="/admin/settings/audit"],
+[href*="/admin/settings/sso"],
+[href*="/admin/settings/advanced-permissions"],
+[href*="/admin/settings/embedding"],
+[href*="/admin/settings/caching"] {
+  display: none !important;
+}
+
+/* 企业版设置部分 */
+[data-testid="enterprise-settings"],
+[data-testid="whitelabel-settings"],
+[data-testid="audit-settings"] {
+  display: none !important;
+}
+
+/* ========================================
+   4. 隐藏许可证相关
+   ======================================== */
+
+/* 许可证输入框 */
+.license-input,
+.license-field,
+[data-testid="license-input"],
+[data-testid="license-field"] {
+  display: none !important;
+}
+
+/* 许可证状态 */
+.license-status,
+.license-info,
+[data-testid="license-status"],
+[data-testid="license-section"] {
+  display: none !important;
+}
+
+/* 许可证设置页面 */
+[href*="/admin/settings/license"] {
+  display: none !important;
+}
+
+/* ========================================
+   5. 隐藏企业版功能提示
+   ======================================== */
+
+/* 企业版功能提示框 */
+.enterprise-feature-notice,
+.pro-feature-notice,
+[data-testid="enterprise-notice"],
+[data-testid="pro-notice"] {
+  display: none !important;
+}
+
+/* 企业版功能锁定图标 */
+.enterprise-lock,
+.pro-lock,
+[data-icon="lock"][data-enterprise="true"] {
+  display: none !important;
+}
+
+/* ========================================
+   6. 隐藏特定企业版功能
+   ======================================== */
+
+/* 审计日志 */
+[href*="/admin/audit"],
+[data-testid="audit-app"] {
+  display: none !important;
+}
+
+/* 白标定制 */
+[href*="/admin/appearance/whitelabel"],
+[data-testid="whitelabel-settings"] {
+  display: none !important;
+}
+
+/* 高级权限 */
+[href*="/admin/permissions/advanced"],
+[data-testid="advanced-permissions"] {
+  display: none !important;
+}
+
+/* SSO 设置 */
+[href*="/admin/settings/authentication/saml"],
+[href*="/admin/settings/authentication/jwt"],
+[data-testid="sso-settings"] {
+  display: none !important;
+}
+
+/* 缓存设置 */
+[href*="/admin/performance/caching"],
+[data-testid="caching-settings"] {
+  display: none !important;
+}
+
+/* 内容审核 */
+[data-testid="moderation-section"] {
+  display: none !important;
+}
+
+/* ========================================
+   7. 隐藏企业版帮助链接
+   ======================================== */
+
+/* 企业版文档链接 */
+a[href*="metabase.com/docs/latest/enterprise"],
+a[href*="metabase.com/learn/administration/serialization"],
+a[href*="metabase.com/learn/administration/audit"] {
+  display: none !important;
+}
+
+/* ========================================
+   8. 隐藏定价页面链接
+   ======================================== */
+
+/* 定价页面链接 */
+a[href*="metabase.com/pricing"],
+a[href*="metabase.com/upgrade"],
+[data-testid="pricing-link"] {
+  display: none !important;
+}
+
+/* ========================================
+   9. 隐藏企业版模态框
+   ======================================== */
+
+/* 企业版升级模态框 */
+[data-testid="upgrade-modal"],
+[data-testid="enterprise-modal"],
+.upgrade-modal,
+.enterprise-modal {
+  display: none !important;
+}
+
+/* ========================================
+   10. 隐藏企业版通知
+   ======================================== */
+
+/* 企业版功能通知 */
+.enterprise-notification,
+[data-notification-type="enterprise"] {
+  display: none !important;
+}
+
+/* ========================================
+   备注
+   ======================================== */
+
+/*
+ * 此 CSS 文件只是隐藏 UI 元素,不会删除任何代码。
+ * 企业版功能仍然存在于代码中,只是在视觉上不可见。
+ * 
+ * 如果需要恢复,只需删除此文件并重新编译即可。
+ * 
+ * 生成脚本: hide-enterprise-ui.sh
+ */
